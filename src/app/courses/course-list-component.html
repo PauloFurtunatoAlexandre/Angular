@@ -3,12 +3,12 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>image</th>
-      <th>name</th>
-      <th>price</th>
-      <th>duration</th>
-      <th>rating</th>
-      <th>releaseDate</th>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Duration</th>
+      <th>Rating</th>
+      <th>Release Date</th>
     </tr>
   </thead>
   <tbody>
@@ -18,9 +18,11 @@
       </td>
       <td>{{course.name}}</td>
       <td>{{course.price}}</td>
-      <td>{{course.code}}</td>
+      <td>{{course.duration}}</td>
+      <td>
+        <app-star rating="{{course.rating}}"></app-star>
+      </td>
       <td>{{course.releaseDate}}</td>
-      <td>{{course.rating}}</td>
       <td></td>
     </tr>
   </tbody>
